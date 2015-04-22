@@ -144,7 +144,7 @@ public class Calculator extends ActionBarActivity {
 
     /** Alters the currValue CharSequence appropriately */
     public void generateDispText(CharSequence c) {
-        if (currValue == null || currValue == "0") {
+        if ((currValue == null || currValue == "0") && c != "C") {
             currValue = (CharSequence)c;
         } else if (c == "C") {
             currValue = "0";
